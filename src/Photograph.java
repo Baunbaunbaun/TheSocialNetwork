@@ -12,11 +12,7 @@ public class Photograph {
 
     public int getWidth() {
 
-        if (this.getHeight() < 1) {
-            return 0;
-        } else {
-            return this.pic[0].length();
-        }
+        return (this.getHeight() < 1) ? 0 : this.pic[0].length();
     }
 
     public int getHeight() {
