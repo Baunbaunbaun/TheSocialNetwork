@@ -1,5 +1,5 @@
-public class Simulation
-{
+public class Simulation{
+
     private DikuPlus network;
     private Person kasper, knud, ole;
 
@@ -14,14 +14,13 @@ public class Simulation
         this.makeFriends();
         this.addPeopleToTheNetwork(new Person[] { kasper, knud, ole });
         this.makeConversation();
-        kasper.printWall();
-        knud.printWall();
-        ole.printWall();
+        this.kasper.printWall();
+        this.knud.printWall();
+        this.ole.printWall();
 
     }
 
-    private void generatePeople()
-    {
+    private void generatePeople(){
 
         //3 pictures in arrays
         String[] knuds = new String[]{
@@ -49,13 +48,13 @@ public class Simulation
 
 
         //create persons
-        knud = new Person("Knud Larsen", knudsPic);
-        ole = new Person("Ole Sucker", olesPic);
-        kasper = new Person("Kasper Knudsen", kaspersPic);
+        this.knud = new Person("Knud Larsen", knudsPic);
+        this.ole = new Person("Ole Sucker", olesPic);
+        this.kasper = new Person("Kasper Knudsen", kaspersPic);
     }
 
-    private void makeFriends()
-    {
+    private void makeFriends(){
+
         this.knud.requestFriendship(this.ole);
         this.ole.requestFriendship(this.knud);
 
@@ -63,14 +62,14 @@ public class Simulation
         this.kasper.requestFriendship(this.ole);
     }
 
-    private void addPeopleToTheNetwork(Person[] people)
-    {
+    private void addPeopleToTheNetwork(Person[] people){
+
         for (Person person : people)
-            network.addPerson(person);
+            this.network.addPerson(person);
     }
 
-    private void makeConversation()
-    {
+    private void makeConversation(){
+
         this.knud.sendMessage(this.kasper, "How's it going?");
         this.kasper.sendMessage(this.knud, "All good!");
 
@@ -83,5 +82,4 @@ public class Simulation
         this.ole.sendMessage(this.knud, "We should meet soon!");
         this.ole.sendMessage(this.kasper, "We should meet soon!");
     }
-
 }

@@ -7,7 +7,7 @@ public class Photograph {
         if (photograph == null) {
             photograph = new String[]{};
         }
-        pic = photograph;
+        this.pic = photograph;
     }
 
     public int getWidth() {
@@ -26,6 +26,6 @@ public class Photograph {
         if (index < 0 || index >= this.pic.length) {
             return null;
         }
-        return pic[index];
+        return this.pic[index];
     }
 }

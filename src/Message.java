@@ -13,11 +13,11 @@ public class Message {
     }
 
     public String getMessage() {
-        return message;
+        return this.message;
     }
 
     public Person getSender() {
-        return sender;
+        return this.sender;
     }
     @Override
     public String toString(){

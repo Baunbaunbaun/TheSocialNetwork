@@ -1,13 +1,11 @@
-import java.security.spec.RSAOtherPrimeInfo;
 import java.util.ArrayList;
 
 public class Person {
 
     private Photograph photo;
     private String name;
-    private ArrayList<Person> friends = new ArrayList();
-    private ArrayList<Person> enemies = new ArrayList();
-    private ArrayList<Message> wall = new ArrayList();;
+    private ArrayList<Person> friends = new ArrayList(), enemies = new ArrayList();
+    private ArrayList<Message> wall = new ArrayList();
 
     public Person(String name, Photograph photo) {
         this.photo = photo;
@@ -42,7 +40,7 @@ public class Person {
             this.wall.add(message);
             return true;
         }
-        else if (message.getMessage() == "/friend")
+        else if (message.getMessage().equals("/friend"));
                 this.friends.add(message.getSender());
                 return true;
         }
