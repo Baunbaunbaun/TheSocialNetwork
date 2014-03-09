@@ -1,3 +1,5 @@
+//Class to produce a social network - DikuPlus. Here you can add persons to the network.
+
 import java.util.ArrayList;
 
 public class DikuPlus {

@@ -1,3 +1,5 @@
+//Class to simulate how the DikuPlus social network is working.
+
 public class Simulation{
 
     private DikuPlus network;

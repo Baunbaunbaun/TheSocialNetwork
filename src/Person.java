@@ -1,3 +1,5 @@
+//Class to produce persons for the DikuPlus social network. The persons have a photograph connected and a wall for messages
+
 import java.util.ArrayList;
 
 public class Person {
@@ -40,9 +42,12 @@ public class Person {
             this.wall.add(message);
             return true;
         }
-        else if (message.getMessage().equals("/friend"));
+        else if (message.getMessage().equals("/friend")){
                 this.friends.add(message.getSender());
                 return true;
+        }
+        else
+            return false;
         }
 
     public Photograph getPhotograph() {

@@ -1,6 +1,5 @@
-/**
- * Created by baunbaun on 02/03/14.
- */
+//Class to produce messages to be send between persons in the DikuPlus social network
+
 public class Message {
 
     private String message;

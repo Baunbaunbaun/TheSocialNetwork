@@ -1,3 +1,5 @@
+// class to produce diagrams that assemble photographs. The photographs are attributes for persons.
+
 public class Photograph {
 
     private String[] pic;
