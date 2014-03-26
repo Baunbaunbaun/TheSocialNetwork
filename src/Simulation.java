@@ -48,7 +48,6 @@ public class Simulation{
         Photograph olesPic = new Photograph(oles);
         Photograph kaspersPic = new Photograph(kaspers);
 
-
         //create persons
         this.knud = new Person("Knud Larsen", knudsPic);
         this.ole = new Person("Ole Sucker", olesPic);
